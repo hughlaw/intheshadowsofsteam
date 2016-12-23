@@ -1,0 +1,61 @@
+@import "../lib/bootstrap/scss/mixins/breakpoints";
+@import "../lib/bootstrap/scss/variables";
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('../media/video-poster.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.custom-font {
+  font-family:'wicked_gritregular';
+  line-height: 1;
+  padding:0rem .6rem;
+  background-color: rgba(0,0,0,.8);
+  color: #eee;
+}
+
+.sm-links {
+  margin-top: 5rem;
+  a,abbr {
+    text-decoration: none;
+    border-bottom: none;
+  }
+  abbr {
+    cursor: pointer;
+  }
+}
+
+@font-face {
+    font-family: 'wicked_gritregular';
+    src: url('../fonts/wickedgrit-webfont.woff2') format('woff2'),
+         url('../fonts/wickedgrit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@include media-breakpoint-up(xs) {
+  .custom-font {
+    font-size: 3rem;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .custom-font {
+    font-size: 4rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .custom-font {
+    font-size: 5rem;
+  }
+}
