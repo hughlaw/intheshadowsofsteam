@@ -18,7 +18,6 @@ video {
 
 .custom-font {
   font-family:'wicked_gritregular';
-  line-height: 1;
   padding:0rem .6rem;
   background-color: rgba(0,0,0,.8);
   color: #eee;
@@ -46,6 +45,7 @@ video {
 @include media-breakpoint-up(xs) {
   .custom-font {
     font-size: 3rem;
+    line-height: 1.2;
   }
 }
 @include media-breakpoint-up(sm) {
@@ -57,5 +57,12 @@ video {
 @include media-breakpoint-up(md) {
   .custom-font {
     font-size: 5rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .custom-font {
+    font-size: 5rem;
+    line-height: 1;
   }
 }

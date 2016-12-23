@@ -15,7 +15,6 @@ video {
 
 .custom-font {
   font-family: 'wicked_gritregular';
-  line-height: 1;
   padding: 0rem .6rem;
   background-color: rgba(0, 0, 0, 0.8);
   color: #eee;
@@ -40,6 +39,7 @@ video {
 }
 .custom-font {
   font-size: 3rem;
+  line-height: 1.2;
 }
 
 @media (min-width: 576px) {
@@ -50,6 +50,12 @@ video {
 @media (min-width: 768px) {
   .custom-font {
     font-size: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .custom-font {
+    font-size: 5rem;
+    line-height: 1;
   }
 }
 
