@@ -46,17 +46,16 @@ video {
   .custom-font {
     font-size: 3rem;
     line-height: 1.2;
+    &.with-border {
+      border: none;
+      border-radius: 0;
+    }
   }
 }
 @include media-breakpoint-up(sm) {
-  .custom-font {
-    font-size: 4rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .custom-font {
-    font-size: 5rem;
+  .custom-font.with-border {
+    border: 7px outset #ededed;
+    border-radius: 4px;
   }
 }
 
