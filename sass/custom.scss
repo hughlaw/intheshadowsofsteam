@@ -51,20 +51,12 @@ video {
       border-radius: 0;
     }
   }
-
 }
 @include media-breakpoint-up(sm) {
   .custom-font.with-border {
     border: 7px outset #ededed;
     border-radius: 4px;
   }
-}
-
-@include media-breakpoint-up(md) {
-  // .custom-font.with-border {
-  //   border: 7px outset #ededed;
-  //   border-radius: 4px;
-  // }
 }
 
 @include media-breakpoint-up(lg) {
