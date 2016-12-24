@@ -41,15 +41,15 @@ video {
   font-size: 3rem;
   line-height: 1.2;
 }
+.custom-font.with-border {
+  border: none;
+  border-radius: 0;
+}
 
 @media (min-width: 576px) {
-  .custom-font {
-    font-size: 4rem;
-  }
-}
-@media (min-width: 768px) {
-  .custom-font {
-    font-size: 5rem;
+  .custom-font.with-border {
+    border: 7px outset #ededed;
+    border-radius: 4px;
   }
 }
 @media (min-width: 992px) {
